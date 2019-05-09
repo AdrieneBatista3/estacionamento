@@ -39,7 +39,7 @@ public class GerenciarEsta extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        jbFinalizar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Sistema de Estacionamento");
@@ -137,8 +137,13 @@ public class GerenciarEsta extends javax.swing.JFrame {
         jLabel10.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel10.setText("Tipo Cliente:");
 
-        jButton1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jButton1.setText("Finalizar");
+        jbFinalizar.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jbFinalizar.setText("Finalizar");
+        jbFinalizar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbFinalizarActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -201,12 +206,12 @@ public class GerenciarEsta extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(lblTotal, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton1))
+                                .addComponent(jbFinalizar))
                             .addComponent(jScrollPane1)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(253, 253, 253)
                         .addComponent(jbSalvar)))
-                .addContainerGap(53, Short.MAX_VALUE))
+                .addContainerGap(50, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -252,7 +257,7 @@ public class GerenciarEsta extends javax.swing.JFrame {
                                 .addComponent(jLabel9)
                                 .addComponent(tfSaida, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(lblTotal, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(jButton1))
+                    .addComponent(jbFinalizar))
                 .addGap(7, 7, 7)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 278, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -284,8 +289,12 @@ public class GerenciarEsta extends javax.swing.JFrame {
     }//GEN-LAST:event_jbEditarActionPerformed
 
     private void tfSaidaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tfSaidaActionPerformed
-        // TODO add your handling code here:
+     
     }//GEN-LAST:event_tfSaidaActionPerformed
+
+    private void jbFinalizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbFinalizarActionPerformed
+      
+    }//GEN-LAST:event_jbFinalizarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -310,7 +319,6 @@ public class GerenciarEsta extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     public static final javax.swing.JLabel jLabel10 = new javax.swing.JLabel();
     private javax.swing.JLabel jLabel2;
@@ -324,6 +332,7 @@ public class GerenciarEsta extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     public static final javax.swing.JButton jbEditar = new javax.swing.JButton();
     public static final javax.swing.JButton jbExcluir = new javax.swing.JButton();
+    private javax.swing.JButton jbFinalizar;
     public static final javax.swing.JButton jbPesquisar = new javax.swing.JButton();
     public static final javax.swing.JButton jbSalvar = new javax.swing.JButton();
     public static final javax.swing.JLabel lblTotal = new javax.swing.JLabel();

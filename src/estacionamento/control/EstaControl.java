@@ -4,11 +4,8 @@ import estacionamento.dao.EstaDao;
 import estacionamento.model.Estacio;
 import estacionamento.uteis.Mensagens;
 import estacionamento.uteis.Painel;
-import estacionamento.uteis.ThreadRelogio;
 import estacionamento.uteis.Validacao;
 import estacionamento.view.GerenciarEsta;
-import static estacionamento.view.GerenciarEsta.tfEntrada;
-import static estacionamento.view.GerenciarEsta.tfSaida;
 import java.util.List;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
@@ -18,7 +15,6 @@ public class EstaControl {
     List<Estacio> listEsta;
     EstaDao estaDao;
     Estacio Estacio;
-    ThreadRelogio threadRelogio;
 
     public EstaControl() {
         estaDao = new EstaDao();
@@ -195,7 +191,7 @@ public class EstaControl {
             GerenciarEsta.tfModelo.requestFocus();
             return;
         }
-        Estacio estacio = new Estacio();
+        Estacio = new Estacio();
         Estacio.setNomeCondutor(GerenciarEsta.tfNome.getText());
         Estacio.setTipoCliente(GerenciarEsta.tfTipoCliente.getText());
         Estacio.setPlaca(GerenciarEsta.tfPlaca.getText());
@@ -234,9 +230,6 @@ public class EstaControl {
     }
 
     public void calculoTempo() {
-        if (Estacio instanceof Estacio) {
-            double Servidor = 2.00;
-            double Publico = 4.00;
-        }
+
     }
 }
