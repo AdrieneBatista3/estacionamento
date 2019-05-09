@@ -238,6 +238,5 @@ public class EstaControl {
             double Servidor = 2.00;
             double Publico = 4.00;
         }
-
     }
 }
