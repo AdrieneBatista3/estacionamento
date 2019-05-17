@@ -229,7 +229,5 @@ public class EstaControl {
         atualizarJTable();
     }
 
-    public void calculoTempo() {
-
-    }
+   
 }
